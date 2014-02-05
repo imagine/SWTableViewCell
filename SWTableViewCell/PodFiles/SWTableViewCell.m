@@ -103,7 +103,8 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
     cellScrollView.showsHorizontalScrollIndicator = NO;
     cellScrollView.scrollsToTop = NO;
     cellScrollView.scrollEnabled = YES;
-    
+    cellScrollView.bounces = NO;
+
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                                            action:@selector(scrollViewUp:)];
     [cellScrollView addGestureRecognizer:tapGestureRecognizer];
